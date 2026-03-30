@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrchestraAI | Multi-Agent Orchestration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Auth View -->
+        <section id="auth-view" class="view">
+            <div class="auth-card">
+                <div class="brand">🎼 OrchestraAI</div>
+                <h1>Sign in to continue</h1>
+                <p>Modern Agentic Orchestration</p>
+                <form id="login-form">
+                    <div class="input-group">
+                        <label>Email address</label>
+                        <input type="email" id="email" placeholder="you@example.com" value="user@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="••••••••" value="password" required>
+                    </div>
+                    <button type="submit" class="btn primary">Sign in</button>
+                </form>
+                <div class="auth-footer">
+                    Don't have an account? <a href="#">Create one</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard View (Hidden by default) -->
+        <section id="dashboard-view" class="view hidden">
+            <nav class="top-nav">
+                <div class="logo">🎼 OrchestraAI</div>
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Tasks</a>
+                    <a href="#">Files</a>
+                    <a href="#" id="logout-btn">Logout</a>
+                </div>
+            </nav>
+
+            <main class="content">
+                <div class="hero-section">
+                    <div class="tag">AGENTIC AI · MULTI-AGENT ORCHESTRATION</div>
+                    <h1>One goal. <br><span class="accent">Many agents.</span> <br>One result.</h1>
+                    <p class="subtitle">OrchestraAI assigns your goals to specialized AI agents—Research, Plan, Write, Code, Review—all coordinated by a master Conductor.</p>
+                    
+                    <div class="goal-input-card">
+                        <label>YOUR GOAL</label>
+                        <div class="input-row">
+                            <textarea id="goal-input" placeholder="e.g. Plan and write content for my SaaS product launch..."></textarea>
+                            <button id="orchestrate-btn" class="btn primary">▶ Orchestrate</button>
+                        </div>
+                        <div class="chips">
+                            <span class="chip">Product launch</span>
+                            <span class="chip">AI trends report</span>
+                            <span class="chip">Study plan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="execution-view" class="hidden">
+                    <div class="conductor-bar">
+                        <div class="conductor-info">
+                            <div class="conductor-icon">🎼</div>
+                            <div>
+                                <div class="conductor-label">CONDUCTOR AGENT</div>
+                                <div id="status-text">Ready</div>
+                            </div>
+                        </div>
+                        <div id="loader" class="loader hidden"></div>
+                    </div>
+
+                    <div class="agent-grid">
+                        <div class="agent-card" data-agent="research">
+                            <div class="agent-emoji">🔍</div>
+                            <div class="agent-name">Research</div>
+                            <div class="agent-desc">Searches & gathers data</div>
+                            <div class="agent-status">Waiting</div>
+                        </div>
+                        <div class="agent-card" data-agent="planner">
+                            <div class="agent-emoji">📅</div>
+                            <div class="agent-name">Planner</div>
+                            <div class="agent-desc">Creates timelines & plans</div>
+                            <div class="agent-status">Waiting</div>
+                        </div>
+                        <div class="agent-card" data-agent="writer">
+                            <div class="agent-emoji">✍️</div>
+                            <div class="agent-name">Writer</div>
+                            <div class="agent-desc">Drafts content & summaries</div>
+                            <div class="agent-status">Waiting</div>
+                        </div>
+                        <div class="agent-card" data-agent="coder">
+                            <div class="agent-emoji">💻</div>
+                            <div class="agent-name">Coder</div>
+                            <div class="agent-desc">Generates code & scripts</div>
+                            <div class="agent-status">Waiting</div>
+                        </div>
+                        <div class="agent-card" data-agent="reviewer">
+                            <div class="agent-emoji">✅</div>
+                            <div class="agent-name">Reviewer</div>
+                            <div class="agent-desc">Validates & refines output</div>
+                            <div class="agent-status">Waiting</div>
+                        </div>
+                    </div>
+
+                    <div id="results-panel" class="results-panel hidden">
+                        <div class="results-header">
+                            <span class="badge">FINAL RESULT</span>
+                            <h2>OrchestraAI Complete</h2>
+                        </div>
+                        <div id="final-result-text" class="result-box"></div>
+                        <button class="btn secondary">Copy Result</button>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

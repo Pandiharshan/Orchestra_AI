@@ -1,0 +1,1 @@
+// 📁 Folder tree (left panel)
