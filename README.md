@@ -6,23 +6,23 @@ OrchestraAI transforms a single development goal into a complete, production-rea
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
 **App:** https://orchestraai-iota.vercel.app/login
 
 ---
 
-## 🖼 Screenshots
+##  Screenshots
 
-### 🔐 Login Page
+###  Login Page
 ![Login](https://raw.githubusercontent.com/Pandiharshan/Orchestra_AI/main/screenshots/Screenshot%202026-03-31%20162418.png)
 
-### 🏠 Dashboard
+###  Dashboard
 ![Dashboard](https://raw.githubusercontent.com/Pandiharshan/Orchestra_AI/main/screenshots/Screenshot%202026-03-31%20162433.png)
 
 ---
 
-## ⚡ Features
+##  Features
 
 - Google OAuth & Email authentication via Supabase
 - 5-agent AI pipeline: Research → Planner → Writer → Coder → Reviewer
@@ -36,7 +36,7 @@ OrchestraAI transforms a single development goal into a complete, production-rea
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 **Frontend** — React 18, TypeScript, Vite, Tailwind CSS, Framer Motion, Supabase JS, Recharts
 
@@ -48,45 +48,7 @@ OrchestraAI transforms a single development goal into a complete, production-rea
 
 ---
 
-## 🚀 Local Setup
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-```
-
-Create `frontend/.env`:
-```env
-VITE_API_BASE_URL=http://localhost:8000
-VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=your-anon-key
-```
-
-```bash
-npm run dev
-```
-
-### Backend
-
-```bash
-cd backend
-pip install -r requirements.txt
-```
-
-Create `backend/.env`:
-```env
-GROQ_API_KEY=your_groq_api_key
-```
-
-```bash
-python -m uvicorn app:app --reload --port 8000
-```
-
----
-
-## 📋 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -98,7 +60,3 @@ python -m uvicorn app:app --reload --port 8000
 | GET | `/stats` | Usage statistics |
 
 ---
-
-## 📄 License
-
-MIT License
