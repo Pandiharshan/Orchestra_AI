@@ -1,7 +1,5 @@
-crewai
-crewai-tools
-fastapi
-uvicorn
-langchain-groq
-python-dotenv
-pydantic
+fastapi==0.115.0
+uvicorn==0.30.6
+langchain-groq==0.1.9
+python-dotenv==1.0.1
+pydantic==2.7.4
