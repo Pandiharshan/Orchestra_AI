@@ -1,1 +1,0 @@
-// 👤 Profile details (name / email)

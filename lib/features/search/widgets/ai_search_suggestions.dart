@@ -1,1 +1,0 @@
-// 🔍 AI-powered search suggestions

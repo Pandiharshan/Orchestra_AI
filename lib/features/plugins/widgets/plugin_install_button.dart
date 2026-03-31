@@ -1,1 +1,0 @@
-// 🧩 Plugin install / toggle button

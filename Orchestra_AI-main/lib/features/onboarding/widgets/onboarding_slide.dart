@@ -1,1 +1,0 @@
-// 🚀 Onboarding slide widget

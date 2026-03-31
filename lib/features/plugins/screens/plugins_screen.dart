@@ -1,1 +1,0 @@
-// 🧩 Plugins / Extensions screen
